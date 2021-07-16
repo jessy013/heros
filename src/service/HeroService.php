@@ -9,7 +9,7 @@ class HeroService
 
     function __construct()
     {
-        $this->addHero(new Hero('Harleen','Quinzel','Harley Queen',true,'une psychiatre reconvertie en psychotique'));
+        $this->addHero(new Hero('Harley','MacKenzy','Harley Queen',true,'une psychiatre reconvertie en psychotique'));
         $this->addHero(new Hero('Brice','Wayne','Batman',false,'une chauve souris avec une grosse super car'));
         $this->addHero(new Hero('Clark','Kent','Superman',false,'Un extra-terrestre louche et journaliste'));
         $this->addHero(new Hero('Diana','Prince','Wonderwoman',false,'une amazone qui roske du poney.'));
@@ -21,6 +21,6 @@ class HeroService
     }
     function addHero($pHero)
     {
-        array_push($_listeHeros,$pHero);
+        array_push($this->_listeHeros,$pHero);
     }
 }
